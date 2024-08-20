@@ -1,0 +1,134 @@
+.dashboard{
+    height: 100%;
+    width: 100%;
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: 0.21fr 1fr;
+
+}
+
+#first-box{
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-rows: 0.1fr 0.8fr 0.1fr;
+}
+
+#app-icon{
+    padding-top: 20px;
+    padding-left: 40px;
+}
+
+#main-box{
+    display: grid;
+    grid-template-rows: 0.1fr 0.9fr;
+    background-color: #FFFFFF;
+}
+
+.icons{
+    height: 60px;
+    width: 300px;
+    color: gray;
+    font-weight: 600px;
+    font-size: 16px;
+    border-radius: 20px;
+    font-family: poppins;
+    margin-left: 20px;
+    margin-top: 10px;
+    display: flex;  
+    align-items: center;
+    transition: all 500ms ease-in;
+    &:hover{
+        background-color:#FFE0E0;   
+        color: #FF1616;
+        cursor: pointer;
+    }
+}
+
+.main-icons{
+    height: 35px;
+    width: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#logout{
+    padding-top: 20px;
+    padding-left: 40px;
+}
+
+#log-out-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    font-family: poppins;
+    font-weight: 900;
+    color: gray;
+    height: 48px;
+    width: 123px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    border-width: 0.5px;
+    border-style: solid;
+    border-color: gray;
+    box-shadow: 0px 2px 2px gray;
+    transition: all 500ms ease-in;
+    &:hover{
+        background-color: #FFE0E0;
+        color: #FF1616;
+        box-shadow: 0px 2px 2px #FFE0E0;
+        cursor: pointer;
+    }
+}
+
+#logout-icon{
+    padding-right: 12px;
+}
+
+#second-box{
+    display: grid;
+    grid-template-rows: 0.12fr 0.88fr;
+}
+
+#upper{
+    width: 100%;
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-columns: 0.3fr 0.55fr 0.15fr;
+    box-shadow: 0px 2px 2px gray;
+}
+
+#head-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#head-child{
+    font-family: poppins;
+    font-weight: 500px;
+    height: 70px;
+    width: 340px;
+}
+
+h2{
+    font-family: 'Segoe UI';
+    font-weight: 700;
+    font-size: 24px;
+}
+
+#profile-div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+}
+
+#profile-pic{
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    background-color: black;
+}
+
