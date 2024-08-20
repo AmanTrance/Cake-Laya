@@ -132,3 +132,55 @@ h2{
     background-color: black;
 }
 
+#lower{
+    display: grid;
+    grid-template-columns: 0.02fr 1fr;
+}
+
+#lower-one{
+    background-color: aliceblue;
+}
+
+#lower-two{
+    display: grid;
+    grid-template-rows: 0.1fr 0.9fr;
+    background-color: aliceblue;
+}
+
+#select{
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+}
+
+#date{
+    margin-left: 20px;
+    height: 34px;
+    width: 90px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #FFFFFF;
+    box-shadow: 0px 2px 2px 0px gray;
+}
+
+#city{
+    margin-left: 20px;
+    height: 34px;
+    width: 90px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #FFFFFF;
+    box-shadow: 0px 2px 2px 0px gray;
+}
+
+#cards{
+    display: grid;
+    grid-template-columns: 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr;
+    grid-template-rows: 0.4fr 0.4fr 0.4fr;
+}

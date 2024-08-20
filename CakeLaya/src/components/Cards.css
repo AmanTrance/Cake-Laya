@@ -1,0 +1,47 @@
+#cards-box{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-card{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 170px;
+    width: 265px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #FFFFFF;
+    box-shadow: 0px 2px 2px 0px gray;
+    transition: all 500ms ease-in;
+    &:hover{
+        background-color: antiquewhite;
+        border-color: antiquewhite;
+    }
+}
+
+h1{
+    font-size: 60px;
+    font-weight: 600;
+    font-family: Barlow;
+    color: black;
+}
+
+.cards-icons{
+    height: 90px;
+    width: 90px;
+}
+
+#content-text{
+    font-family: Barlow;
+    font-weight: 800;
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
