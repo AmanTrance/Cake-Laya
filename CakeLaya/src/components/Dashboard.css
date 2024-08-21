@@ -45,6 +45,7 @@
 }
 
 .main-icons{
+    image-rendering: crisp-edges;
     height: 35px;
     width: 35px;
     padding-left: 20px;
@@ -129,7 +130,9 @@ h2{
     height: 60px;
     width: 60px;
     border-radius: 50px;
-    background-color: black;
+    background-image: url('../../public/profile_pic.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 #lower{

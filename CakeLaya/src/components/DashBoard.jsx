@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Dashboard.css'
 import appIcon from '../../public/cakelaya.png?url'
 import homeIcon from '../../public/home.png?url'
@@ -8,8 +8,20 @@ import logout from '../../public/logout-icon.png?url'
 import Cards from './Cards'
 import customer from '../../public/customers.png?url'
 import merchant from '../../public/merchants.png?url'
+import { useLocation, useNavigate } from 'react-router-dom'
 
 function DashBoard() {
+    const navigate = useNavigate();
+    const [name, setName] = useState(null);
+    const location = useLocation();
+    useEffect(() => {
+        if(window.sessionStorage.getItem('id') === null){
+            navigate('/');
+    } else {
+        setName(`${location.state.username}`)
+    }
+    })
+
   return (
     <div className='dashboard'>
         <div id='first-box'>
@@ -38,7 +50,7 @@ function DashBoard() {
                 <div id='head-div'>
                     <div id='head-child'>
                         <h2>Dashboard</h2><br/>
-                        Hi Samantha, Welcome back to Admin Panel! 
+                        Hi {name}, Welcome back to Admin Panel! 
                     </div>
                 </div>
                 <div id='plain-div'></div>
